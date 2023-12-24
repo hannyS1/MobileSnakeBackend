@@ -1,0 +1,24 @@
+GET {{backendAddr}}/api/users/me
+Authorization: Bearer {{romaToken}}
+###
+
+GET {{backendAddr}}/api/users/me
+Authorization: Bearer {{igorToken}}
+###
+
+GET {{backendAddr}}/api/results/my
+Authorization: Bearer {{romaToken}}
+###
+
+GET {{backendAddr}}/api/results/my
+Authorization: Bearer {{igorToken}}
+###
+
+POST {{backendAddr}}/api/results
+Authorization: Bearer {{romaToken}}
+Content-Type: application/json
+
+{
+  "score": 30
+}
+###
